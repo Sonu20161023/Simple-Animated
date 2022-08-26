@@ -1,0 +1,160 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('ocean.jpg')no-repeat center center/cover;
+}
+
+nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0.2rem 1rem;
+}
+nav ul li a:hover{
+    color:gold
+}
+
+
+.logo {
+    color: whitesmoke;
+    margin-left: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-shadow: 0 5px rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    padding: 0.3rem 1rem
+}
+
+.container .ocean {
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    color: whitesmoke;
+}
+
+.container .ocean h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+
+}
+
+button {
+    margin-top: 30px;
+    padding: 0.3rem;
+    font-size: 17px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 200px;
+}
+button:hover{
+    color:gold;
+}
+
+button::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -210px;
+    background-color: whitesmoke;
+}
+
+button::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: -210px;
+    background-color: whitesmoke;
+}
+
+.seaLive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.seaLive img {
+    width: 100px;
+    animation: swim 10s linear infinite;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-2200px);
+        opacity: 0;
+    }
+}
+
+.seaLive img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.seaLive img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.seaLive img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.seaLive img:nth-child(4) {
+    animation-delay: 5s;
+
+}
+
+.seaLive img:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.seaLive img:nth-child(6) {
+    animation-delay: 7s;
+}
